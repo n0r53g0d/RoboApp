@@ -1,11 +1,11 @@
 ﻿//
-// MainPage.xaml.cpp
-// Implementation of the MainPage class.
+// NewBackup.xaml.cpp
+// Implementation of the NewBackup class
 //
 
 #include "pch.h"
-#include "MainPage.xaml.h"
 #include "NewBackup.xaml.h"
+#include "MainPage.xaml.h"
 
 using namespace RoboApp;
 
@@ -20,16 +20,15 @@ using namespace Windows::UI::Xaml::Input;
 using namespace Windows::UI::Xaml::Media;
 using namespace Windows::UI::Xaml::Navigation;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
+// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
-MainPage::MainPage()
+NewBackup::NewBackup()
 {
 	InitializeComponent();
 }
 
 
-
-void RoboApp::MainPage::btn_New_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
+void RoboApp::NewBackup::btnClose_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
 {
-	this->Frame->Navigate(Windows::UI::Xaml::Interop::TypeName(NewBackup::typeid));
+	this->Frame->Navigate(Windows::UI::Xaml::Interop::TypeName(MainPage::typeid));
 }

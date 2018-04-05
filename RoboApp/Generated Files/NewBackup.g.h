@@ -20,7 +20,7 @@ namespace Windows {
 namespace RoboApp
 {
     [::Windows::Foundation::Metadata::WebHostHidden]
-    partial ref class MainPage : public ::Windows::UI::Xaml::Controls::Page, 
+    partial ref class NewBackup : public ::Windows::UI::Xaml::Controls::Page, 
         public ::Windows::UI::Xaml::Markup::IComponentConnector,
         public ::Windows::UI::Xaml::Markup::IComponentConnector2
     {
@@ -32,7 +32,7 @@ namespace RoboApp
     private:
         bool _contentLoaded;
     
-        private: ::Windows::UI::Xaml::Controls::Button^ btn_New;
+        private: ::Windows::UI::Xaml::Controls::Button^ btnClose;
     };
 }
 

@@ -17,5 +17,7 @@ namespace RoboApp
 	public:
 		MainPage();
 
+	private:
+		void btn_New_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e);
 	};
 }
